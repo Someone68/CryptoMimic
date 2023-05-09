@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CryptoMimic</title>
+	<link rel="stylesheet" href="style.css" />
+	<script src="https://kit.fontawesome.com/1abfab8baa.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<h1 titlet>CryptoMimic</h1>
+	<h2 id="cps">0.00 CPS</h2>
+	<h2 id="score" class="score">₿ 0</h2>
+	<div class="mine" id="mine" onclick="mine();">₿</div>
+	<h2 id="cpu">0 / 100 CPU Usage</h2>
+	<p id="shopicon" title="shop" onclick="shop.style.display = 'block';"><i class="fa-solid fa-cart-shopping"></i></p>
+	<div id="shop" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">×</span>
+      <h2><i class="fa-solid fa-cart-shopping"></i> Shop</h2>
+    </div>
+    <div class="modal-body">
+      <h4>Click an Item to Buy</h4>
+			<hr>
+			<p class="upgrade" title="CPU Usage: 10 - Automatically mines every 3 seconds">Background Processes ₿ 50</p>
+			<h5>CPU Usage: 10 - Automatically mines every 3 seconds</h4>
+			<hr>
+			<p class="upgrade" title="CPU Usage: 8 - Increases mining power by 1">Better Crypto Mining Software ₿ 80</p>
+			<h5>CPU Usage: 8 - Increases mining power by 1</h4>
+			<hr>
+			<p class="upgrade" title="Increases max CPU by 20">DVD Drive ₿ 120</p>
+			<h5>Increases max CPU by 20</h4>
+			<hr>
+    </div>
+    <div class="modal-footer">
+    </div>
+  </div>
+
+</div>
+	<script src="script.js"></script>
+</body>
+</html>

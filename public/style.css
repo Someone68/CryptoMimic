@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+:root{
+	--background: #051a1a;
+	--trans-background: rgba(5, 26, 26, .4);
+	--light-background: #137777;
+	--text-color: #28e6c6;
+	--accent: #00ffd5;
+	--dark-accent:#00bd9d;
+}
+
+*{
+	font-family: 'Orbitron', sans-serif;
+	padding:0;
+	margin:0;
+}
+
+html, body{
+	width:100%;
+	height:100vh;
+	user-select:none;
+}
+
+body{
+	background: var(--background);
+	color: var(--text-color);
+}
+
+[titlet]{
+	text-align:center;
+	font-size: 40px;
+}
+
+h1[onclick]:hover{
+	color:white;
+	cursor:pointer;
+}
+
+.mine{
+	color: var(--accent);
+	padding:23px;
+	font-size: 86px;
+	width: 100px;
+	user-select:none;
+	cursor:pointer;
+	text-align:center;
+	border: 2px solid var(--accent);
+	position: absolute;
+	left:50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+}
+
+.mine:active{
+	padding:18px;
+	font-size: 81px;
+}
+
+#cps{
+	text-align:center;
+}
+
+.score{
+	font-size: 30px;
+	text-align: center;
+}
+
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: var(--background); /* Fallback color */
+  background-color: var(--trans-background); /* Black w/ opacity */
+}
+
+hr{
+	border: 1px solid var(--light-background);
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: var(--background);
+  margin: auto;
+  padding: 0;
+  width: 45%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+@-webkit-keyframes animatetopout {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetopout {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: var(--accent);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: var(--light-background);
+  color: white;
+}
+
+.modal-body {padding: 10px; color:white;line-spacing:6px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: var(--light-background);
+  color: white;
+}
+
+.upgrade {
+	font-size: 17.5px;
+	color: var(--text-color);
+	cursor: pointer;
+	font-weight: bold;
+	text-align: left;
+	width: fit-content;
+}
+
+.upgrade:hover {
+	color: white;
+}
+
+#cpu {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+}
+
+#shopicon{
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	color: var(--accent);
+	font-size: 32px;
+	cursor:pointer;
+}
+
+#shopicon:hover{
+	color:var(--dark-accent);
+}
+
+#shopicon:active{
+	color: vaR(--light-background);
+}
+
+.modal-body * {
+	margin: 3.3px;
+}
